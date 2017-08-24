@@ -1,0 +1,135 @@
+html,
+body {
+    /**Background properties**/
+    min-height: 100%;
+    height: 100%;
+    background: url(../images/background/main-background.png) center top 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+}
+.logo {
+    /**Logo properties**/
+    width: 50%;
+    height: 350px;
+    margin: 0;
+    position: absolute;
+    left: 51.5%;
+    top: 22.5%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.video {
+    /**Videoplayer properties**/
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+.button {
+    /**Button properties**/
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 120px;
+    width: 120px;
+}
+    /**Makes the videoplayer non-clickable and non-pausable**/
+    audio::-webkit-media-controls-timeline,
+    video::-webkit-media-controls-timeline {
+    display: none;
+}
+    audio::-webkit-media-controls,
+    video::-webkit-media-controls {
+    display: none;
+}
+.navbar {
+    /**Main navigation properties**/
+    width: auto;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar ul {
+    /**Ul - navigation properties**/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float:left;
+    width:100%;
+    overflow: hidden;
+}
+
+
+.navbar li {
+    /**Li - navigation properties**/
+    /**For each li a background-image**/
+    float: left;
+    width:25%;
+    min-width: 243px;
+    background-image: url("../images/navbar/navbar.jpg");
+}
+
+.navbar a:link, a:visited {
+    /**Hover link settings - navigation properties**/
+    /**For now it only changes the fontproperties**/
+    display: block;
+    height: 42px;
+    min-width: 243px;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway', Arial;
+    letter-spacing: 2pt;
+    line-height: 140%;
+    overflow: hidden;
+}
+
+.header {
+    /**Background of the middlesection**/
+    background-image: url("../images/background/middle-section-background.jpg");
+    height: 800px;
+    width: 1200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    margin-right: -50%;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 52.8%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.videoplayer {
+    /**Adds a border to the videoplayer**/
+    border: 5px solid black;
+}
+footer {
+    /**Creates the footer**/
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/footer/footer.jpg);
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 5%;
+    height: auto !important;
+    margin: 0 auto -0em;
+    letter-spacing: 2px;
+}
+
